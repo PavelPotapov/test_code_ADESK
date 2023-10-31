@@ -8,7 +8,7 @@ $size-laptop-menu: 408px;
 	line-height: 110%;
 	padding: 20px;
 	width: $size-laptop-menu;
-	height: calc(100vh - 80px);
+	height: calc(100dvh - 80px);
 	position: fixed;
 	top: 80px;
 	right: -$size-laptop-menu;
@@ -46,7 +46,7 @@ $size-laptop-menu: 408px;
 	}
 
 	&__item {
-		transition: color .3s;
+		transition: color 0.3s;
 		color: $color-white;
 		&:hover {
 			color: $color-blue;
