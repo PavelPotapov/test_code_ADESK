@@ -1,0 +1,15 @@
+.assembly {
+	margin-bottom: 200px;
+}
+
+@include laptop {
+	.assembly {
+		margin-bottom: 150px;
+	}
+}
+
+@include tablet-min {
+	.assembly {
+		margin-bottom: 100px;
+	}
+}

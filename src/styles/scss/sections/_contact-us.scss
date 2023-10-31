@@ -1,0 +1,15 @@
+.contact-us {
+	margin-bottom: 250px;
+}
+
+@include laptop {
+	.contact-us {
+		margin-bottom: 200px;
+	}
+}
+
+@include tablet-min {
+	.contact-us {
+		margin-bottom: 100px;
+	}
+}

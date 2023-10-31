@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div class="header-wrapper">
+			<header class="header">
+				<div class="logo">
+					<a href="#">
+						<img
+							class="logo__image"
+							src="../public/img/logo.svg"
+							alt="Logo"
+							width="104"
+							height="24"
+						/>
+					</a>
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#">Возможности</a></li>
+						<li class="nav__item"><a href="#">Решения</a></li>
+						<li class="nav__item"><a href="#">Ресурсы</a></li>
+						<li class="nav__item"><a href="#">Блог</a></li>
+						<li class="nav__item"><a href="#">Отзывы</a></li>
+						<li class="nav__item"><a href="#">Цены</a></li>
+					</ul>
+					<div class="login-section" data-id="login-section">
+						<button
+							type="button"
+							class="login-section__demo block"
+							data-id="demo-btn"
+						>
+							Записаться на демо
+						</button>
+						<a href="#" class="login-section__auth block" data-id="login"
+							>Войти</a
+						>
+						<button
+							type="button"
+							class="login-section__reg block"
+							data-id="reg"
+						>
+							Зарегистрироваться
+						</button>
+					</div>
+					<button type="button" class="burger block"></button>
+				</nav>
+			</header>
+		</div>
+
+		<div class="laptop-menu">
+			<nav class="laptop-menu__nav" data-id="laptop-menu">
+				<ul class="laptop-menu__list">
+					<li class="laptop-menu__item"><a href="#">Возможности</a></li>
+					<li class="laptop-menu__item"><a href="#">Решения</a></li>
+					<li class="laptop-menu__item"><a href="#">Ресурсы</a></li>
+					<li class="laptop-menu__item"><a href="#">Блог</a></li>
+					<li class="laptop-menu__item"><a href="#">Отзывы</a></li>
+					<li class="laptop-menu__item"><a href="#">Цены</a></li>
+				</ul>
+			</nav>
+
+			<div class="social">
+				<a href="#"
+					><img
+						src="./public/img/tg.svg"
+						alt="Telegramm"
+						width="22"
+						height="22"
+				/></a>
+				<a href="#"
+					><img
+						src="./public/img/facebook.svg"
+						alt="Facebook"
+						width="22"
+						height="22"
+				/></a>
+				<a href="#"
+					><img
+						src="./public/img/vk.svg"
+						alt="Vkontakte"
+						width="22"
+						height="22"
+				/></a>
+				<a href="#"
+					><img
+						src="./public/img/youtube.svg"
+						alt="YouTube"
+						width="22"
+						height="22"
+				/></a>
+				<a href="#"
+					><img
+						src="./public/img/inst.svg"
+						alt="Instagram"
+						width="22"
+						height="22"
+				/></a>
+			</div>
+		</div>
+
+		<main>
+			<section class="intro">
+				<div class="container">
+					<h2 class="intro__title">Баланс</h2>
+					<p class="intro__subtitle">
+						Для руководителя, который хочет эффективно распоряжаться ресурсами
+						компании и извлекать из них максимум прибыли.
+					</p>
+					<button type="button" class="btn btn-access block">
+						Протестировать бесплатно
+					</button>
+					<picture>
+						<source
+							srcset="./public/img/table.png"
+							media="(max-width: 600px)"
+						/>
+						<img
+							src="./public/img/balance-hero.png"
+							srcset="
+								./public/img/balance-hero.png    1x,
+								./public/img/balance-hero@2x.png 2x
+							"
+							alt="Table"
+							class="block center"
+						/>
+					</picture>
+				</div>
+			</section>
+
+			<section class="balance">
+				<div class="container balance__inner">
+					<img
+						src="./public/img/balance.png"
+						srcset="./public/img/balance.png 1x, ./public/img/balance@2x.png 2x"
+						alt="Balance"
+						class="block"
+						width="200"
+						height="200"
+					/>
+					<h2 class="balance__title">
+						Баланс —
+						<span class="balance__accent">главный отчет собственника.</span> Он
+						поможет вам понять, где кроется прибыль, какими активами обладает
+						бизнес и насколько эффективно они используются.
+					</h2>
+				</div>
+			</section>
+
+			<section class="finance">
+				<div class="container section">
+					<div class="section-info">
+						<h2 class="section-title">
+							Получите полную картину финансов компании
+						</h2>
+						<p class="section-text">
+							Где заморожена прибыль? Богатеет ли компания со временем? Кому
+							принадлежит бизнес — вам или кредиторам? Насколько рационально
+							используются ресурсы?
+						</p>
+						<p class="section-text">Все ответы ждут вас в балансе.</p>
+					</div>
+					<img
+						class="block section-image"
+						src="./public/img/finance.png"
+						srcset="./public/img/finance.png 1x, ./public/img/finance@2x.png 2x"
+						alt="Finance"
+						width="558"
+						height="540"
+					/>
+				</div>
+			</section>
+
+			<section class="health">
+				<div class="container section section--reverse">
+					<div class="section-info">
+						<h2 class="section-title">
+							Оперативно оценивайте здоровье бизнеса
+						</h2>
+						<p class="section-text">
+							На основе отчета Adesk сам посчитает важные метрики собственника:
+							ROE, ликвидность, финансовую независимость и эффективность
+							бизнеса, как актива.
+						</p>
+						<p class="section-text">
+							Остается только проанализировать показатели и скорректировать
+							стратегию развития компании.
+						</p>
+					</div>
+					<img
+						class="block section-image"
+						src="./public/img/health.png"
+						srcset="./public/img/health.png 1x, ./public/img/health@2x.png 2x"
+						alt="Health"
+						width="558"
+						height="540"
+					/>
+				</div>
+			</section>
+
+			<section class="master">
+				<div class="container section section--column">
+					<div class="section-info">
+						<h2 class="section-title">
+							Построить отчет поможет<br />
+							мастер сборки баланса 🧙‍♂️
+						</h2>
+						<p class="section-text">
+							Специальный робот вместе с вами пройдет все этапы сверки денег,
+							запасов, обязательств и капитала, чтобы активы точно сошлись с
+							пассивами.
+						</p>
+					</div>
+
+					<img
+						class="block section-image"
+						src="./public/img/master.png"
+						srcset="./public/img/master.png 1x, ./public/img/master@2x.png 2x"
+						alt="Master"
+						width="1140"
+						height="760"
+					/>
+				</div>
+			</section>
+
+			<section class="assembly">
+				<div class="container section">
+					<div class="section-info">
+						<h2 class="section-title">Соберите один раз, а дальше — мы сами</h2>
+						<p class="section-text">
+							После первичной сборки отчета сервис будет сам обновлять его
+							на основании изменений данных в сервисе.
+						</p>
+						<p class="section-text">
+							Отчет строится по принципу двойной записи, то есть каждое ваше
+							действие в Adesk автоматически отображается в активах и пассивах.
+						</p>
+					</div>
+					<img
+						class="block section-image"
+						src="./public/img/assembly.png"
+						srcset="
+							./public/img/assembly.png    1x,
+							./public/img/assembly@2x.png 2x
+						"
+						alt="Finance"
+						width="558"
+						height="540"
+					/>
+				</div>
+			</section>
+
+			<div class="contact-us">
+				<div class="container section section--column">
+					<div class="section-info mb30">
+						<h2 class="section-title">
+							Узнайте, как ваш бизнес распоряжается ресурсами
+						</h2>
+						<p class="section-text">
+							Зарегистрируйтесь и получите 14 дней бесплатного доступа
+							к балансовому отчету и другим инструментам Adesk.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="btn btn-access block">
+					Начать учёт в Adesk
+				</button>
+			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__logo">
+							<img
+								src="./public/img/motto.png"
+								alt="Logo"
+								width="267"
+								height="51"
+							/>
+						</div>
+
+						<div class="left-side">
+							<div class="footer__list accordion">
+								<div class="footer__list-top accordion__btn">
+									<h3 class="footer__list-title">Возможности</h3>
+									<button type="button" class="block">
+										<img
+											src="./public/img/arrow.svg"
+											alt="Arrow"
+											width="30"
+											height="30"
+										/>
+									</button>
+								</div>
+								<ul class="footer__list-content accordion__content">
+									<li class="footer__list-item">
+										<a href="#">Движение денежных средств</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Прибыль и убытки</a>
+									</li>
+									<li class="footer__list-item"><a href="#">Баланс</a></li>
+									<li class="footer__list-item">
+										<a href="#">Учет обязательств</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Анализ расходов</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Платежный календарь</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Бюджетирование</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Учет товаров и запасов</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Согласование платежей</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Робот-помощник и AI</a>
+									</li>
+									<li class="footer__list-item"><a href="#">Интеграции</a></li>
+								</ul>
+							</div>
+							<div class="footer__list adesk accordion">
+								<div class="footer__list-top accordion__btn">
+									<h3 class="footer__list-title">Adesk для бизнеса</h3>
+									<button type="button" class="block">
+										<img
+											src="./public/img/arrow.svg"
+											alt="Arrow"
+											width="30"
+											height="30"
+										/>
+									</button>
+								</div>
+								<ul class="footer__list-content accordion__content">
+									<li class="footer__list-item">
+										<a href="#">Движение денежных средств</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Прибыль и убытки</a>
+									</li>
+									<li class="footer__list-item"><a href="#">Баланс</a></li>
+									<li class="footer__list-item">
+										<a href="#">Учет обязательств</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Анализ расходов</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Платежный календарь</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Бюджетирование</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Учет товаров и запасов</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Согласование платежей</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Робот-помощник и AI</a>
+									</li>
+									<li class="footer__list-item"><a href="#">Интеграции</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="right-side">
+							<div class="footer__list accordion">
+								<div class="footer__list-top accordion__btn">
+									<h3 class="footer__list-title">Ресурсы</h3>
+									<button type="button" class="block">
+										<img
+											src="./public/img/arrow.svg"
+											alt="Arrow"
+											width="30"
+											height="30"
+										/>
+									</button>
+								</div>
+								<ul class="footer__list-content accordion__content">
+									<li class="footer__list-item">
+										<a href="#">Журнал о финансах</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Базовый курс о финансах</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#"
+											>Расширенный курс по учету
+											<img
+												src="./public/img/course.svg"
+												alt="course"
+												width="18"
+												height="18"
+										/></a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Шаблон финансовой модели</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Внедрение под ключ</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Партнерская программа</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#">Бонусы от партнеров</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__info">
+								<div class="footer__list accordion">
+									<div class="footer__list-top accordion__btn">
+										<h3 class="footer__list-title">Информация</h3>
+										<button type="button">
+											<img
+												src="./public/img/arrow.svg"
+												alt="Arrow"
+												width="30"
+												height="30"
+											/>
+										</button>
+									</div>
+									<ul class="footer__list-content accordion__content">
+										<li class="footer__list-item">
+											<a href="#">Документация по API</a>
+										</li>
+										<li class="footer__list-item">
+											<a href="#">Отзывы пользователей</a>
+										</li>
+										<li class="footer__list-item"><a href="#">Помощь</a></li>
+									</ul>
+								</div>
+								<div class="footer__list footer__questions accordion">
+									<div class="footer__list-top accordion__btn">
+										<h3 class="footer__list-title footer__list-title--contacts">
+											Контакты
+										</h3>
+										<button type="button">
+											<img
+												src="./public/img/arrow.svg"
+												alt="Arrow"
+												width="30"
+												height="30"
+											/>
+										</button>
+									</div>
+									<ul class="footer__list-content accordion__content">
+										<li>
+											<h3 class="footer__list-title mb5">
+												По вопросам клиентов:
+											</h3>
+										</li>
+										<li class="footer__list-item">
+											<a href="#">support@adesk.ru</a>
+										</li>
+										<li class="footer__list-item">
+											<a href="#">+7 (495) 106-21-00</a>
+										</li>
+										<li>
+											<h3 class="footer__list-title mb5">
+												Предложения и сотрудничество:
+											</h3>
+										</li>
+										<li class="footer__list-item">
+											<a href="#">inbox@adesk.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__cards-apps">
+							<div class="footer__cards">
+								<img
+									src="./public/img/visa.svg"
+									alt="VISA"
+									class="block"
+									width="49"
+									height="24"
+								/>
+								<img
+									src="./public/img/mastercard.svg"
+									alt="mastercard"
+									class="block"
+									width="33"
+									height="24"
+								/>
+								<img
+									src="./public/img/tinkoff.svg"
+									alt="tinkoff"
+									class="block"
+									width="104"
+									height="10"
+								/>
+							</div>
+							<div class="footer__apps">
+								<a href="#">
+									<img
+										src="./public/img/appstore.png"
+										alt="appstore"
+										class="block"
+										width="120"
+										height="44"
+									/>
+								</a>
+								<a href="#">
+									<img
+										src="./public/img/googleplay.png"
+										alt="googleplay"
+										class="block"
+										width="133"
+										height="44"
+									/>
+								</a>
+							</div>
+						</div>
+
+						<div class="footer__docs">
+							<a href="#"
+								><span class="block adesk-text">ООО «Адеск», 2022</span></a
+							>
+							<a href="#"
+								><span class="block">Политика конфиденциальности</span></a
+							>
+							<a href="#"><span class="block">Договор-оферта</span></a>
+						</div>
+						<div class="social footer__social">
+							<a href="#"
+								><img
+									src="./public/img/tg.svg"
+									alt="Telegramm"
+									width="22"
+									height="22"
+							/></a>
+							<a href="#"
+								><img
+									src="./public/img/facebook.svg"
+									alt="Facebook"
+									width="22"
+									height="22"
+							/></a>
+							<a href="#"
+								><img
+									src="./public/img/vk.svg"
+									alt="Vkontakte"
+									width="22"
+									height="22"
+							/></a>
+							<a href="#"
+								><img
+									src="./public/img/youtube.svg"
+									alt="YouTube"
+									width="22"
+									height="22"
+							/></a>
+							<a href="#"
+								><img
+									src="./public/img/inst.svg"
+									alt="Instagram"
+									width="22"
+									height="22"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<div class="laptop-menu__overlay"></div>
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>

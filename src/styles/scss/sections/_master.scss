@@ -1,0 +1,16 @@
+.master {
+    margin-bottom: 220px;
+}
+
+
+@include laptop {
+	.master  {
+		margin-bottom: 150px;
+	}
+}
+
+@include tablet-min {
+	.master  {
+		margin-bottom: 100px;
+	}
+}

@@ -1,0 +1,95 @@
+/*ACCORDION*/
+.accordion {
+	&__content {
+		max-height: max-content;
+	}
+	&__btn {
+		img {
+			display: none;
+			transition: transform 0.3s;
+		}
+		pointer-events: none;
+
+		&--active {
+			img {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+@include laptop {
+	.accordion {
+		&__content {
+			max-height: max-content;
+		}
+		&__btn {
+			img {
+				display: none;
+			}
+			pointer-events: none;
+		}
+	}
+}
+
+@include tablet-min {
+	.accordion {
+		&__content {
+			overflow-y: hidden;
+			max-height: 0px;
+			transition: max-height 0.7s;
+		}
+
+		&__content--active {
+			max-height: max-content;
+		}
+
+		&__btn {
+			img {
+				display: block;
+			}
+			cursor: pointer;
+			pointer-events: auto;
+		}
+	}
+}
+
+.block {
+	display: block;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mb5 {
+	margin-bottom: 5px;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+/* ИКОНКИ TG VK INST FACEBOOK */
+.social {
+	display: flex;
+	gap: 20px;
+}
+
+.disabled-scroll {
+	overflow-y: hidden;
+}
+
+/* CONTAINER */
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+@include laptop {
+	.container {
+		padding: 0px 30px;
+	}
+}

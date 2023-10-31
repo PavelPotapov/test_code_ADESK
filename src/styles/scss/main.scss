@@ -1,0 +1,21 @@
+@import "./breakpoints/vars.scss";
+@import "./breakpoints/media_breakpoints";
+
+@import "./base/reset";
+@import "./base/font";
+@import "./base/vars";
+@import "./base/base";
+@import "./ui/burger";
+@import "./ui/btn";
+
+@import "./menu/laptop-menu";
+@import "./sections/header";
+@import "./sections/intro";
+@import "./sections/balance";
+@import "./sections/section";
+@import "./sections/finance";
+@import "./sections/health";
+@import "./sections/master";
+@import "./sections/assembly";
+@import "./sections/contact-us";
+@import "./sections/footer";

@@ -1,0 +1,15 @@
+.health {
+	margin-bottom: 200px;
+}
+
+@include laptop {
+	.health {
+		margin-bottom: 150px;
+	}
+}
+
+@include tablet-min {
+	.health {
+		margin-bottom: 100px;
+	}
+}

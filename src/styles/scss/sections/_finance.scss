@@ -1,0 +1,15 @@
+.finance {
+	margin-bottom: 200px;
+}
+
+@include laptop {
+	.finance {
+		margin-bottom: 150px;
+	}
+}
+
+@include tablet-min {
+	.finance {
+		margin-bottom: 100px;
+	}
+}

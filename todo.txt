@@ -1,0 +1,5 @@
+Graphik LCG Bold 3
+Graphik LCG Regular Italic 3
+Graphik LCG Semibold 22
+Graphik LCG Medium 30
+Graphik LCG Regular 138
