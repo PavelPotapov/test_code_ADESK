@@ -55,7 +55,7 @@
 		</div>
 
 		<div class="laptop-menu" data-id="laptop-menu">
-			<nav class="laptop-menu__nav" data-id="laptop-menu">
+			<nav class="laptop-menu__nav">
 				<ul class="laptop-menu__list">
 					<li class="laptop-menu__item"><a href="#">Возможности</a></li>
 					<li class="laptop-menu__item"><a href="#">Решения</a></li>
@@ -298,10 +298,16 @@
 						</div>
 
 						<div class="left-side">
-							<div class="footer__list accordion">
-								<div class="footer__list-top accordion__btn">
+							<div
+								class="footer__list accordion"
+								data-js-accordion='{"width": 600}'
+							>
+								<div class="footer__list-top accordion-topic">
 									<p class="footer__list-title">Возможности</p>
-									<button type="button" class="block">
+									<button
+										type="button"
+										class="accordion-btn accordion-btn--hide"
+									>
 										<img
 											loading="lazy"
 											src="./public/img/arrow.svg"
@@ -311,7 +317,7 @@
 										/>
 									</button>
 								</div>
-								<ul class="footer__list-content accordion__content">
+								<ul class="footer__list-content accordion-content">
 									<li class="footer__list-item">
 										<a href="#">Движение денежных средств</a>
 									</li>
@@ -343,10 +349,16 @@
 									<li class="footer__list-item"><a href="#">Интеграции</a></li>
 								</ul>
 							</div>
-							<div class="footer__list adesk accordion">
-								<div class="footer__list-top accordion__btn">
+							<div
+								class="footer__list adesk accordion"
+								data-js-accordion='{"width": 600}'
+							>
+								<div class="footer__list-top accordion-topic">
 									<p class="footer__list-title">Adesk для бизнеса</p>
-									<button type="button" class="block">
+									<button
+										type="button"
+										class="accordion-btn accordion-btn--hide"
+									>
 										<img
 											loading="lazy"
 											src="./public/img/arrow.svg"
@@ -356,7 +368,7 @@
 										/>
 									</button>
 								</div>
-								<ul class="footer__list-content accordion__content">
+								<ul class="footer__list-content accordion-content">
 									<li class="footer__list-item">
 										<a href="#">Движение денежных средств</a>
 									</li>
@@ -391,10 +403,16 @@
 						</div>
 
 						<div class="right-side">
-							<div class="footer__list accordion">
-								<div class="footer__list-top accordion__btn">
+							<div
+								class="footer__list accordion"
+								data-js-accordion='{"width": 600}'
+							>
+								<div class="footer__list-top accordion-topic">
 									<p class="footer__list-title">Ресурсы</p>
-									<button type="button" class="block">
+									<button
+										type="button"
+										class="accordion-btn accordion-btn--hide"
+									>
 										<img
 											loading="lazy"
 											src="./public/img/arrow.svg"
@@ -404,7 +422,7 @@
 										/>
 									</button>
 								</div>
-								<ul class="footer__list-content accordion__content">
+								<ul class="footer__list-content accordion-content">
 									<li class="footer__list-item">
 										<a href="#">Журнал о финансах</a>
 									</li>
@@ -437,10 +455,16 @@
 								</ul>
 							</div>
 							<div class="footer__info">
-								<div class="footer__list accordion">
-									<div class="footer__list-top accordion__btn">
+								<div
+									class="footer__list accordion"
+									data-js-accordion='{"width": 600}'
+								>
+									<div class="footer__list-top accordion-topic">
 										<p class="footer__list-title">Информация</p>
-										<button type="button">
+										<button
+											type="button"
+											class="accordion-btn accordion-btn--hide"
+										>
 											<img
 												loading="lazy"
 												src="./public/img/arrow.svg"
@@ -450,7 +474,7 @@
 											/>
 										</button>
 									</div>
-									<ul class="footer__list-content accordion__content">
+									<ul class="footer__list-content accordion-content">
 										<li class="footer__list-item">
 											<a href="#">Документация по API</a>
 										</li>
@@ -460,12 +484,18 @@
 										<li class="footer__list-item"><a href="#">Помощь</a></li>
 									</ul>
 								</div>
-								<div class="footer__list footer__questions accordion">
-									<div class="footer__list-top accordion__btn">
+								<div
+									class="footer__list footer__questions accordion"
+									data-js-accordion='{"width": 600}'
+								>
+									<div class="footer__list-top accordion-topic">
 										<p class="footer__list-title footer__list-title--contacts">
 											Контакты
 										</p>
-										<button type="button">
+										<button
+											type="button"
+											class="accordion-btn accordion-btn--hide"
+										>
 											<img
 												loading="lazy"
 												src="./public/img/arrow.svg"
@@ -475,7 +505,7 @@
 											/>
 										</button>
 									</div>
-									<ul class="footer__list-content accordion__content">
+									<ul class="footer__list-content accordion-content">
 										<li>
 											<p class="footer__list-title mb5">
 												По вопросам клиентов:
