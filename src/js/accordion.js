@@ -32,7 +32,6 @@ export default function () {
 		})
 	}
 
-
 	/* при уходе с мобильного разрешения удаляем инлайновые стили высоты */
 	const mobileWidthMediaQuery = window.matchMedia("(max-width: 600px)")
 
@@ -41,7 +40,7 @@ export default function () {
 			clearMaxHeight()
 		}
 	}
-	
+
 	trigger(mobileWidthMediaQuery.matches)
 
 	mobileWidthMediaQuery.addEventListener("change", function (event) {

@@ -13,12 +13,13 @@ $size-laptop-menu: 408px;
 	top: 80px;
 	right: -$size-laptop-menu;
 	background-color: $color-darkblue;
-	transition: right 0.5s;
+	transition: transform 0.5s;
 	border-radius: 10px 0 0 0;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	overflow-y: auto;
 
 	&__nav {
 		display: flex;
@@ -42,7 +43,7 @@ $size-laptop-menu: 408px;
 	}
 
 	&.active {
-		right: 0;
+		transform: translateX(-$size-laptop-menu);
 	}
 
 	&__item {

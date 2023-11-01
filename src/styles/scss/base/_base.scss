@@ -40,10 +40,6 @@
 			transition: max-height 0.7s;
 		}
 
-		&__content--active {
-			max-height: max-content;
-		}
-
 		&__btn {
 			img {
 				display: block;
@@ -78,6 +74,19 @@
 
 .disabled-scroll {
 	overflow-y: hidden;
+}
+
+/* screen reader only */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
 }
 
 /* CONTAINER */
