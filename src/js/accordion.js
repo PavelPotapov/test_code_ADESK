@@ -2,21 +2,38 @@ class AccordionHelper {
 	constructor(node) {
 		this.accordion = node
 		this.isTriggered = false
+
+		this.selectors = {
+			btn: ".accordion-btn",
+			content: ".accordion-content",
+		}
+
+		this.classes = {
+			btnHide: "accordion-btn--hide",
+			btnActive: "accordion-btn--active",
+			contentActive: "accordion-content--active",
+		}
 		this.init()
 		this.matchMedia()
+		this.handleСlick()
 	}
 
 	//получает data-js-accordion для определения параметров отображения
 	//по сути можно развивать функциональность, в этом атрибуте будут храниться стартовые параметры аккордеона
 	//сейчас там находится информация о ширине, с которой аккордеон начинает свою работу
 	init() {
-		this.parameters = JSON.parse(this.accordion.dataset.jsAccordion)
+		try {
+			this.parameters = JSON.parse(this.accordion.dataset.jsAccordion)
+		} catch {
+			this.parameters = { width: 600 }
+		}
+
 		if (this.parameters.hasOwnProperty("width")) {
 			this.width = this.parameters.width
 		}
 
-		this.btn = this.accordion.querySelector(".accordion-btn") //кнопка аккордеона
-		this.content = this.accordion.querySelector(".accordion-content") //контент
+		this.btn = this.accordion.querySelector(this.selectors.btn) //кнопка аккордеона
+		this.content = this.accordion.querySelector(this.selectors.content) //контент
 	}
 
 	//при изменении viewport надо удалить inline стили максимальной высоты, записанные туда ранее, чтобы не ломалась верстка
@@ -31,14 +48,14 @@ class AccordionHelper {
 	}
 
 	hide() {
-		this.btn.classList.remove("accordion-btn--hide")
-		this.content.classList.remove("accordion-content--active")
+		this.btn.classList.remove(this.classes.btnHide)
+		this.content.classList.remove(this.classes.contentActive)
 	}
 
 	show() {
-		this.btn.classList.add("accordion-btn--hide")
-		this.btn.classList.remove("accordion-btn--active")
-		this.content.classList.add("accordion-content--active")
+		this.btn.classList.add(this.classes.btnHide)
+		this.btn.classList.remove(this.classes.btnActive)
+		this.content.classList.add(this.classes.contentActive)
 	}
 
 	//срабатывающий триггер. когда сузим до нужной ширины или наоборот расширим больше, чем нужно, срабатывает эта функция
@@ -70,9 +87,9 @@ class AccordionHelper {
 		this.accordion.addEventListener("click", (e) => {
 			if (this.isTriggered && this.content && this.btn) {
 				e.preventDefault()
-				this.btn.classList.toggle("accordion-btn--active")
-				this.content.classList.toggle("accordion-content--active")
-				if (this.content.classList.contains("accordion-content--active")) {
+				this.btn.classList.toggle(this.classes.btnActive)
+				this.content.classList.toggle(this.classes.contentActive)
+				if (this.content.classList.contains(this.classes.contentActive)) {
 					this.content.style.maxHeight = this.content.scrollHeight + "px"
 				} else {
 					this.content.style.maxHeight = 0
@@ -83,9 +100,8 @@ class AccordionHelper {
 }
 
 export function initAccordions() {
-	const accordions = Array.from(document.querySelectorAll(".accordion"))
+	const accordions = document.querySelectorAll(".accordion")
 	accordions.forEach((accordion) => {
-		const acc = new AccordionHelper(accordion)
-		acc.handleСlick()
+		new AccordionHelper(accordion)
 	})
 }
